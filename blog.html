@@ -6,7 +6,7 @@
 <head>
 
   <!-- Basic -->
-  <title>EasTek | Right Sidebar</title>
+  <title>EaseTek</title>
 
   <!-- Define Charset -->
   <meta charset="utf-8">
@@ -90,7 +90,7 @@
               <ul class="contact-details">
                 <li><a href="#"><i class="fa fa-map-marker"></i>Los Angeles, Ca</a>
                 </li>
-                <li><a href="#"><i class="fa fa-envelope-o"></i> info@yourcompany.com</a>
+                <li><a href="#"><i class="fa fa-envelope-o"></i> ease@easetekglobal.com</a>
                 </li>
                 <li><a href="#"><i class="fa fa-phone"></i> +1 8181 792 1821</a>
                 </li>
@@ -268,27 +268,70 @@
             </div>
             <!-- End Post -->
 
-           <!-- 
- Start Post            <div class="blog-post video-post">
-              Post Video              <div class="post-head">
-                <iframe src="http://player.vimeo.com/video/63322694?title=0&amp;byline=0&amp;portrait=0" width="800" height="450"></iframe>
-              </div>
-              Post Content              <div class="post-content">
+			<!--Start Post-->
+            <div class="blog-post video-post">
+			<!--Post Video-->
+              <div class="post-head">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/3acWFYmIYR0" frameborder="0" allowfullscreen></iframe>              </div>
+<!--Post Content -->
+               <div class="post-content">
                 <div class="post-type"><i class="fa fa-play"></i></div>
-                <h2><a href="#">Iframe Video Post</a></h2>
+                <h2><a href="#">Inspire everyone to code</a></h2>
                 <ul class="post-meta">
-                  <li>By <a href="#">iThemesLab</a></li>
-                  <li>December 30, 2013</li>
-                  <li><a href="#">WordPress</a>, <a href="#">Graphic</a></li>
-                  <li><a href="#">4 Comments</a></li>
+                  <li>By <a href="#">Christian Zamudio</a></li>
+                  <li>June 4, 2016</li>
                 </ul>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                <a class="main-button" href="#">Read More <i class="fa fa-angle-right"></i></a>
+                <p>As I began my studying code in college it was always hard to meet other people who actually knew about code and how it worked.
+                This video was a great way to learn how learning to code can be a great skill that everyone should know about. Check out the video and was it on to others as we can always
+                help inspire the programmers of tomorrow. Just as great programmer of this generation have brought us great technological advances and help bring us all closer together
+                . All possible through code.</p>
               </div>
             </div>
-            End Post
+<!-- End Post-->
+        <!-- Start Post -->
+            <div class="blog-post image-post">
+              <!-- Post Thumb -->
+              <div class="post-head">
+                <a class="lightbox" title="This is an image title" href="images/blog/dalvik_64k_error.png">
+                  <div class="thumb-overlay"><i class="fa fa-arrows-alt"></i></div>
+                  <img alt="" src="images/blog/dalvik_64k_error.png">
+                </a>
+              </div>
+              <!-- Post Content -->
+              <div class="post-content">
+                <div class="post-type"><i class="fa fa-picture-o"></i></div>
+                <h2><a href="#">Nightmare Error in Android (64K Method Limit)</a></h2>
+                <ul class="post-meta">
+                  <li>By <a href="#">Christian Zamudio</a></li>
+                  <li>June 9 2016</li>
+                </ul>
+                <p> A few days ago, I was doing my usual routine of going to work and then after work, come home and work on some of the side web and android projects
+                I enjoy. After a few years of doing android development, I have never been encountered with a horrible error as android's 64K LIMIT ERROR. Let me give a little
+                more background. My android app was using the parse framework and very easy way to store information on a server without the need to develop your own REST API.
+                This framework comes with a pretty large library. As soon as I added the Google Play Services library which encompasses some of Google's powerful and helpful
+                api's such as the Places and Maps api, I encountered this horrific error. It was a very new error to me as based on the context of the error it seemed as I had broken something :).
+                Doing some research online using every developers best friend, Google. I learned more about this error. To keep it simple, Android OS can only handle a certain amount of methods in the
+                applications source code. The limit is 64K methods, once this limit is meet your Android Studio builder is not too happy and gives this horrific error, so horrific I had to write a blog post.
+                So there are two solutions to this problem 1) Add DexApplication Class to Android App 2) Modify Proguards setting to shrink code.
+          
+                </p>
+                <p>
+                	<h3>My solution</h3>
+                	Modified the gradle to only add the google play services libraries what were actually going to be used. Many of these third party libraries
+                	have a lot of libraries in our apps memory that is never used. This can later create problems when creating large apps that incorporated more then one
+                	third party libraries. Because the method counter can reach its limit very easily
+                
+                </p>
+                
+                <a  href="https://developer.android.com/studio/build/multidex.html">Read More in Android Developers Website</a>
+                </br>
+                <a  href="http://stackoverflow.com/questions/15436956/how-to-solve-the-issue-with-dalvik-compiler-limitation-on-64k-methods?rq=1">Read More in StackOverFlow</a>
+              </div>
+            </div>
+            <!-- End Post -->
 
-            Start Post            <div class="blog-post link-post">
+ <!-- 
+           Start Post            <div class="blog-post link-post">
               Post Content              <div class="post-content">
                 <div class="post-type"><i class="fa fa-link"></i></div>
                 <h2><a href="#">Link Post</a></h2>
@@ -358,6 +401,7 @@
               </div>
             </div>
             End Post
+ ~~>
  -->
 
             <!-- Start Pagination -->
